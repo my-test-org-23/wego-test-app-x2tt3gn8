@@ -1,0 +1,14 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  labels:
+    wego.weave.works/app-identifier: wego-f0d4c0d4cf6836b1a1148c2daeddf105
+  name: my-helm-app
+  namespace: wego-system
+spec:
+  branch: main
+  deployment_type: helm
+  path: ./hello-world
+  source_type: git
+  url: ssh://git@github.com/my-test-org-23/wego-test-app-x2tt3gn8.git
